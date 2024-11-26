@@ -14,6 +14,10 @@ namespace Bibliotec.Contexts
 
         }
 
+        public Context()
+        {
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

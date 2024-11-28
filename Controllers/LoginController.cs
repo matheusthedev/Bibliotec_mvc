@@ -56,6 +56,8 @@ namespace Bibliotec.Controllers
                 return LocalRedirect("~/Login");
             } else  {
                 Console.WriteLine($"Eba Você Entrou!");
+                HttpContext.Session.SetString("UsuarioID", usuarioBuscado.UsuarioID.ToString());
+                HttpContext.Session.SetString("Admin", usuarioBuscado.Admin.ToString());
                 return LocalRedirect("~/Livro");
                 
             }

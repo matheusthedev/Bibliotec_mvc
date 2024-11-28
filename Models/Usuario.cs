@@ -21,8 +21,8 @@ namespace Bibliotec.Models
         public bool Status;
 
         [ForeignKey("Curso")]
-        public int CursoID { get; set; }
+        public int? CursoID { get; set; }
 
-        public Curso Curso { get; set; }
+        public Curso? Curso { get; set; }
     }
 }
